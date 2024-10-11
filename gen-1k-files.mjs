@@ -8,7 +8,7 @@ const PATH_TO_MODULES_FOLDER = path.join(PATH_TO_SRC_FOLDER, "modules");
 
 await fs.mkdir(PATH_TO_MODULES_FOLDER, { recursive: true });
 
-const array = new Array(10).fill(0);
+const array = new Array(1000).fill(0);
 await Promise.all(
   array.map((_, idx) =>
     fs.writeFile(

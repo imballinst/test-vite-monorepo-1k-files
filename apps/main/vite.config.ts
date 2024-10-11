@@ -11,7 +11,7 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
+    force: process.env.FORCE_PREBUNDLE === "true",
     include: ["@pkg/one"],
-    // include: ["../../packages/package-1/src/**/*.ts"],
   },
 });
