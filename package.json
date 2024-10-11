@@ -1,0 +1,20 @@
+{
+  "name": "test-vite-monorepo-1k-files",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "repository": "https://github.com/imballinst/test-vite-monorepo-1k-files",
+  "author": "Try Ajitiono <ballinst@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn workspace main dev"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "yarn@4.5.0",
+  "devDependencies": {
+    "typescript": "5.5.3"
+  }
+}
